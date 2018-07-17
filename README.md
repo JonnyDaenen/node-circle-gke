@@ -8,9 +8,14 @@ Kubernetes Engine (GKE).
 
 ## Docker Image
 
-Run:
+Build:
 
     docker build -t node-circle-gke .
+
+
+Build with version number
+
+    docker build -t node-circle-gke --build-arg COMMIT_REF=23sdfsdf23 --build-arg BUILD_DATE=2018-07-01 .
 
 Run:
 
